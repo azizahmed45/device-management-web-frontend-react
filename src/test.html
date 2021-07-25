@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+
+<body>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <div id="container"></div>
+    <script>
+        gapi.load('gapi.iframes', function () {
+            var options = {
+                'url': 'https://play.google.com/work/embedded/search?token=WAP_6YqpbZR_1NNHJxUkdSTcBiywGUg7jYNVMb3yAkVUVSAa7q7XKfUjxHeqWn5H2ZXdt5bNc3k23B6XOWUSpyDSnQos48H4kmPWpxQVeYLyQ6hIC8KmugeS9asRQFJbUcNHDv1ZBWqiBdGheAIIr8YB5T675Zw3d0g&mode=SELECT',
+                'where': document.getElementById('container'),
+                'attributes': { style: 'width: 600px; height:1000px', scrolling: 'yes' }
+            }
+
+            var iframe = gapi.iframes.getContext().openChild(options);
+        });
+    </script>
+</body>
+
+</html>
